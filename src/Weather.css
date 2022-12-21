@@ -2,6 +2,56 @@
     border:1px solid #d5def5;
 }
 
+.Weather h1{
+    position: relative;
+    left:9px;
+    font-size: 20px;
+    line-height: 25px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.Weather form {
+   margin: 10px;
+}
+
  .Weather h2 {
-    text-align: center;
+    text-align: center;  
+    
+ }
+
+ .Weather .basic-description {
+    margin: 0;
+ }
+
+ .Weather .description{
+    display: block;
+    position: relative;
+    top: -40px;
+    text-align: right;
+    color: rgb(27, 26, 26);
+    list-style: none;
+    font-size: 16px;
+ }
+ 
+ .Weather li {
+    position: relative;
+    left:-25px;
+    display: block;
+    list-style: none;
+    line-height: 25px;
+    text-transform: capitalize;
+ }
+ .Weather .temperature {
+    position: relative;
+    top:-50px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+ }
+
+ .Weather .unit {
+    position: relative;
+    top:-65px;
+    left: 4px;
  }

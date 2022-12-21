@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
         <Weather/>
       <footer>
-        This project was coded by Yvonne Imongan and is open-sourced {" "}
+        Designed and coded by Yvonne Imongan and is open-sourced {" "}
       <a href="https://github.com/Yvo-spks/react-weather-app" target="_blank" rel="noreferrer">
 
         open-sourced on GitHub

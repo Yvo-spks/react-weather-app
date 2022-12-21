@@ -1,4 +1,17 @@
+body {
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: rgb(37, 34, 34);
+padding: 16px;
+margin: 30px auto;
+max-width: 700px;
+border-radius: 4px;
 
+}
+
+.App footer{
+    font-size: 11px;
+    margin: 10px;
+}
 
 
 
