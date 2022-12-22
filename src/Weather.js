@@ -8,6 +8,7 @@ export default function Weather(props){
 const[weatherData, setweatherData] = useState({loaded: false});
 
  function handleResponse(response){
+  console.log(response.data);
  setweatherData({
     loaded:true,
     temperature: response.data.main.temp,
@@ -18,8 +19,6 @@ const[weatherData, setweatherData] = useState({loaded: false});
     wind: response.data.wind.speed,
     city: response.data.name
  });
-
- 
 
 }
 
@@ -49,13 +48,13 @@ const[weatherData, setweatherData] = useState({loaded: false});
             </h1>
             <ul className="basic-descprition">
                <li>
-               <Date date = { weatherData.date} />
+               <Date date={weatherData.date} />
               </li> 
                <li>{weatherData.description}</li>
             </ul>
             <h2>
             <img 
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              src="{weatherData.iconUrl"
                alt=""
                width= "100"
                 />
@@ -77,7 +76,7 @@ const[weatherData, setweatherData] = useState({loaded: false});
         </div>
     );
  } else{
-   const apiKey = "22600970cc1e19a65b9eea57b485b5ac";
+   const apiKey = "d23f750b1a155d6884146d06cd0fd211";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`
 
    axios.get(apiUrl).then(handleResponse)
