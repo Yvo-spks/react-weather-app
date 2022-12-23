@@ -1,4 +1,5 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props){
@@ -7,8 +8,9 @@ export default function WeatherInfo(props){
         <h1>{props.data.city}</h1>
         <ul className="basic-descprition">
           <li>
-            Friday 2:59
+            <FormattedDate date={props.data.date} />
           </li>
+
           <li>{props.data.description}</li>
         </ul>
 
