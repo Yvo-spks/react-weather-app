@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import { TailSpin } from "react-loader-spinner";
 import axios from "axios";
 import "./Weather.css";
 
@@ -67,7 +68,18 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
     );
  } else{
    search();
-   return "Loading..."
+  return (
+    <TailSpin
+      height="80"
+      width="80"
+      color="#252222"
+      ariaLabel="tail-spin-loading"
+      radius="1"
+      wrapperStyle={{}}
+      wrapperClass=""
+      visible={true}
+    />
+  );
  }
 
 }
