@@ -1,5 +1,4 @@
 import React from "react";
-import Date from "./Date";
 import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props){
@@ -8,11 +7,11 @@ export default function WeatherInfo(props){
         <h1>{props.data.city}</h1>
         <ul className="basic-descprition">
           <li>
-            <Date date={props.data.date} />
+            Friday 2:59
           </li>
           <li>{props.data.description}</li>
         </ul>
-        
+
         <h2>
           <WeatherIcon code={props.data.icon} />
         </h2>
