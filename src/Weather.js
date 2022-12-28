@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import { TailSpin } from "react-loader-spinner";
 import axios from "axios";
 import "./Weather.css";
@@ -10,9 +11,9 @@ const[weatherData, setweatherData] = useState({loaded: false});
 const[city, setCity] = useState(props.defaultCity);
 
  function handleResponse(response){
-  
  setweatherData({
    loaded: true,
+   coordinates: response.data.coord,
    temperature: response.data.main.temp,
    humidity: response.data.main.humidity,
    date: new Date(response.data.dt * 1000),
@@ -64,6 +65,7 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
              </div>
             </form>
             <WeatherInfo data={weatherData} />
+            <WeatherForecast coordinates={weatherData.coordinates} />
             
         </div>
     );
