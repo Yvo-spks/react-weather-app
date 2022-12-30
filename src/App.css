@@ -1,6 +1,7 @@
 body {
 font-family: Georgia, 'Times New Roman', Times, serif;
 color: rgb(37, 34, 34);
+background: linear-gradient(-180deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
 padding: 16px;
 margin: 30px auto;
 max-width: 700px;
@@ -11,6 +12,13 @@ border-radius: 4px;
 .App footer{
     font-size: 11px;
     margin: 10px;
+    
+}
+
+.App .links {
+    text-decoration: none;
+    color:#224160;
+    
 }
 
 

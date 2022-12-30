@@ -6,15 +6,28 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Dortmund"/>
-      <footer>
-        Designed and coded by Yvonne Imongan and is open-sourced {" "}
-      <a href="https://github.com/Yvo-spks/react-weather-app" target="_blank" rel="noreferrer">
-
-        open-sourced on GitHub
-
-      </a>
-      </footer>
+        <Weather defaultCity="Dortmund" />
+        <footer>
+          Designed and coded by Yvonne Imongan and{" "}
+          <a
+            href="https://github.com/Yvo-spks/react-weather-app"
+            target="_blank"
+            rel="noreferrer"
+            className="links"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+         
+          and{" "}
+          <a
+            href="https://storied-belekoy-bdfd25.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+            className="links"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
       </div>
     </div>
   );

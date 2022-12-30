@@ -56,7 +56,7 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${
               </div>
               <div className="col-2">
               <input type="submit" value="search" 
-              className="btn btn-primary" w-100/>
+              className="btn btn-secondary" w-100/>
               </div>
              </div>
             </form>
